@@ -1,0 +1,215 @@
+/* Animals Hero Section */
+.animals-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../../images/heroes/animals-hero.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: -76px;
+}
+
+.search-container {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.search-container button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+/* Animal Categories */
+.category-tabs .nav-pills {
+    gap: 1rem;
+}
+
+.category-tabs .nav-link {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.category-tabs .nav-link:hover {
+    background-color: var(--accent-color);
+}
+
+.category-tabs .nav-link.active {
+    background-color: var(--primary-color);
+    color: rgb(11, 108, 228);
+}
+
+/* Animal Cards */
+.animal-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.animal-card:hover {
+    transform: translateY(-5px);
+}
+
+.animal-card img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.animal-card:hover img {
+    transform: scale(1.1);
+}
+
+.animal-card .conservation-status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+/* Featured Animal */
+.featured-animal img {
+    transition: transform 0.3s ease;
+}
+
+.featured-animal img:hover {
+    transform: scale(1.02);
+}
+
+.featured-content .species {
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+.fact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.fact-item i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+/* Conservation Status Cards */
+.status-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.status-card:hover {
+    transform: translateY(-5px);
+}
+
+.status-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.status-card.endangered .status-icon {
+    background-color: #ffecb3;
+    color: #ff6f00;
+}
+
+.status-card.breeding .status-icon {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status-card.released .status-icon {
+    background-color: #e3f2fd;
+    color: #1565c0;
+}
+
+.counter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+/* Animal Facts Carousel */
+.fact-carousel {
+    padding: 2rem 0;
+}
+
+.fact-slide {
+    text-align: center;
+    padding: 1rem;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 10px 0rem;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 15px;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .animals-hero {
+        height: 40vh;
+    }
+
+    .category-tabs .nav-pills {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .animal-card img {
+        height: 150px;
+    }
+
+    .featured-animal .col-md-6:first-child {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animal-card {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.status-card {
+    animation: fadeInUp 0.5s ease-out;
+}

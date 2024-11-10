@@ -1,0 +1,42 @@
+singapore-wildlife/
+├── index.html
+├── about.html
+├── animals.html
+├── contact.html
+├── feedback.html
+├── assets/
+│   ├── css/
+│   │   ├── styles.css               # 主样式文件
+│   │   ├── components/              # 组件样式
+│   │   │   ├── header.css
+│   │   │   ├── footer.css
+│   │   │   ├── forms.css
+│   │   │   └── cards.css
+│   │   └── pages/                   # 页面特定样式
+│   │       ├── home.css
+│   │       ├── about.css
+│   │       ├── animals.css
+│   │       ├── contact.css
+│   │       └── feedback.css
+│   ├── js/
+│   │   ├── main.js                  # 主JavaScript文件
+│   │   ├── modules/                 # 功能模块
+│   │   │   ├── form-validation.js
+│   │   │   ├── image-lazy-load.js
+│   │   │   └── dynamic-loading.js
+│   │   └── pages/                   # 页面特定脚本
+│   │       ├── home.js
+│   │       └── animals.js
+│   ├── images/
+│   │   ├── logo.svg
+│   │   ├── heroes/                  # 大型横幅图片
+│   │   │   ├── home-hero.jpg
+│   │   │   └── about-hero.jpg
+│   │   ├── animals/                 # 动物图片
+│   │   │   ├── mammals/
+│   │   │   ├── birds/
+│   │   │   └── reptiles/
+│   │   └── icons/                   # 图标
+│   └── fonts/                       # 如果需要本地字体
+├── vendor/                          # 第三方库（如果需要本地存储）
+└── README.md                        # 项目文档
